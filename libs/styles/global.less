@@ -1,0 +1,119 @@
+@import 'vars';
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	background-color: #1e2022;
+	background-image: url(../img/pb.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: contain;
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	line-height:18px;
+	text-align: center;
+}
+
+a {
+	color: @linkColor;
+	text-decoration: none;
+
+	&:hover {
+		color: @linkHoverColor;
+	}
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.h1header {
+	font-size: 48px;
+	line-height: 56px;
+}
+
+.h2header {
+	font-size: 28px;
+	line-height: 36px;
+	margin: 20px 0 50px;
+}
+
+.h3header {
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.inline {
+	display: inline;
+}
+
+.header {
+	margin-bottom: 75px;
+
+	&__title {
+		margin: 72px 0 28px;
+	}
+}
+
+.yellow {
+	color: @yellow4game;
+}
+
+.subbar {
+	display: flex;
+	justify-content: center;
+
+	&__link {
+		text-transform: uppercase;
+		font-size: 13px;
+		letter-spacing: 1px;
+		font-weight: bold;
+		font-family: Arial, sans-serif;
+	}
+
+	&__link + &__link {
+		margin-left: 30px;
+	}
+}
+
+.about {
+
+	&__grid {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__point + &__point {
+		margin-left: 100px;
+	}
+
+	&__point {
+
+		&-title {
+			font-size: 15px;
+			line-height: 28px;
+			text-transform: uppercase;
+			opacity: 0.5;
+			font-weight: bold;
+			letter-spacing: 1px;
+			margin-top: 20px;
+		}
+	}
+}
+
+.footer {
+	margin-top: 100px;
+	padding: 10px 0;
+	border-top: 2px solid rgba(255, 255, 255, .2);
+}
+
+.toggle {
+	position: absolute;
+	top:0;
+	left:0;
+}

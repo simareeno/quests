@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quest widget on play</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/play.css">
+	<link rel="stylesheet" href="css/progress.css">
+	<link rel="stylesheet" href="css/achievement/animations.css">
+	<link rel="stylesheet" href="css/achievement/bgs.css">
+	<link rel="stylesheet" href="css/achievement/style.css">
+	<link rel="stylesheet" href="css/ach-quest.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
+
+	<style>
+
+		a:hover {
+			color:red;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="play">
+		<div class="play__column column">
+
+			<div class="play__widget quests">
+				<div class="quests__title">
+					<a href="quest_ach.html">Задания</a>
+				</div>
+				<div class="play__column-row">
+					<div class="quests__quest quest">
+						<div class="quest__progress">
+							<div class="quest__progress-bar" style="0%"></div>
+							<div class="quest__progress-title">0 из 3</div>
+						</div>
+						<div class="quest__outer"></div>
+						<div class="quest__inner">
+							<div class="quest__inner-back">
+								<div class="quest__title">Убей 3&nbsp;врагов ниже тебя
+									по&nbsp;званию</div>
+								<div class="quest__cancel"></div>
+							</div>
+							<div class="quest__inner-front"></div>
+						</div>
+					</div>
+				</div>
+				<div class="quests__progress progress progress--light progress--small">
+					<div class="progress__item"></div>
+					<div class="progress__item"></div>
+					<div class="progress__item"></div>
+					<div class="progress__item"></div>
+					<div class="progress__prize"></div>
+				</div>
+				<div class="quests__subtitle">
+					Выполни 4 задания и получи <a href="quest_ach.html">одну из наград</a>
+				</div>
+			</div>
+
+			<div class="play__widget vk">
+				<img src="img/vk-widget.png" alt="">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quest widget on play</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/prizes.css">
+	<link rel="stylesheet" href="css/quests.css">
+	<link rel="stylesheet" href="css/play.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
+	<script src="scripts/script.js" charset="utf-8"></script>
+	<script src="scripts/prizes-stack-box.js" charset="utf-8"></script>
+</head>
+<body>
+
+	<div class="play">
+		<div class="play__column column">
+			<div class="play__widget play__widget--quests">
+				<div class="quests__title">
+					<a href="index.html">Задания</a>
+				</div>
+				<div class="quests container quests--faq quests--state1">
+					<div class="faq__compact">?</div>
+					<div class="quests__item faq faq--state1 faq--active">
+						<div class="faq__icon">
+							<div class="faq__cards">
+								<div class="faq__card faq__card1"></div>
+								<div class="faq__card faq__card2"></div>
+								<div class="faq__card faq__card3"></div>
+							</div>
+							<div class="faq__equal">
+								<div class="faq__equal-line faq__equal-line1"></div>
+								<div class="faq__equal-line faq__equal-line2"></div>
+							</div>
+							<div class="faq__sun">
+								<img src="img/faq-sun.png" alt="">
+							</div>
+							<div class="faq__cup">
+								<img src="img/faq-cup.png" alt="">
+							</div>
+							<div class="faq__x">×</div>
+						</div>
+						<div class="faq__descs">
+							<div class="faq__desc1 faq__desc faq__desc1">Получай награду за&nbsp;каждые три задания</div>
+							<div class="faq__desc2 faq__desc faq__desc2">Выполняй по&nbsp;одному заданию каждый день</div>
+							<div class="faq__desc3 faq__desc faq__desc3">Меняй задания, которые не&nbsp;нравятся</div>
+						</div>
+						<div class="faq__dots">
+							<div class="faq__dot faq__dot1 faq__dot--active"></div>
+							<div class="faq__dot faq__dot2"></div>
+							<div class="faq__dot faq__dot3"></div>
+						</div>
+						<div class="faq__close"><a>Понятно, закрыть</a></div>
+					</div>
+					<div class="quests__item quest__flippable quests__item--1 quests__item--active">
+						<div class="quest__front">
+							<div class="quests__quest quest--white quest quest--active">
+								<div class="quest__status">1</div>
+								<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
+								<div class="quest__progress">0 из 8</div>
+								<div class="quest__cancel cancel quest__cancel--active">
+									<div class="quest__tooltip">Поменять задание</div>
+									<img src="img/close.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="quest__back">
+							<div class="quests__quest quest--white quest quest--active">
+								<div class="quest__status">1</div>
+								<div class="quest__title">Сыграй матч на карте Линкорн или Убежище</div>
+								<div class="quest__cancel cancel">
+									<div class="quest__tooltip quest__tooltip--only">Можно поменять только одно задание в день</div>
+									<img src="img/close.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quests__quest quest--white quests__item quest quest--closed quests__item--2">
+						<div class="quest__status">
+							2
+						</div>
+						<div class="quest__title">Задание закрыто</div>
+						<div class="quest__desc">Выполни активное, чтобы открыть</div>
+					</div>
+					<div class="quests__quest quest--white quests__item quest quest--closed quests__item--3">
+						<div class="quest__status">
+							3
+						</div>
+						<div class="quest__title">Задание закрыто</div>
+						<div class="quest__desc">Выполни предыдущее, чтобы открыть</div>
+					</div>
+					<div class="quests__prize prize--white quests__item prize quests__item--4">
+						<div class="prize__trophy">
+							<img src="img/prize-white-locked.png" alt="" />
+						</div>
+						<div class="prize__title"><a href="index.html">Коробка Sky Plus</a></div>
+						<div class="prize__days">внутри случайный предмет</div>
+						<div class="prize__icon"><a href="index.html"><img class="prize__icon-img" src="img/skyplus.jpg" alt=""></a></div>
+						<div class="prize__scroll prize__scroll--hide"></div>
+					</div>
+				</div>
+
+				<div class="quests__progress progress">
+					<div class="progress__item progress__item1 progress__card progress__card--in-progress progress__card--active">1</div>
+					<div class="progress__item progress__item2 progress__card">2</div>
+					<div class="progress__item progress__item3 progress__card">3</div>
+					<div class="progress__item progress__item4 progress__trophy">
+						<img src="img/trophy-grey.png" alt="">
+						<!-- <div class="progress__item-name">Коробка Sky Plus</div> -->
+					</div>
+				</div>
+
+			</div>
+			<div class="play__widget vk">
+				<img src="img/vk-widget.png" alt="">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

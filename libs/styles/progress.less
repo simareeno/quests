@@ -1,0 +1,124 @@
+@import 'vars';
+
+.progress {
+	margin-top: 15px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+
+	&__item {
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 7px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			height: 2px;
+		}
+	}
+
+	&--light & {
+
+		&__item {
+			border-color: #ccc;
+
+			&::after {
+				background-color: #e5e5e5;
+			}
+		}
+	}
+
+	&--dark & {
+
+		&__item {
+			border-color: #3a3a41;
+
+			&::after {
+				background-color: #3a3a41;
+			}
+		}
+	}
+
+	&--big & {
+
+		&__item {
+			width: 45px;
+			height: 50px;
+
+			&::after {
+				width: 15px;
+			}
+
+			& + & {
+				margin-left: 35px;
+			}
+		}
+
+		&__prize {
+			width: 48px;
+			height: 45px;
+			background-image: url(../img/trophy-big.png);
+			margin-left: 35px;
+		}
+	}
+
+	&--small & {
+
+		&__item {
+			width: 30px;
+			height: 35px;
+
+			&::after {
+				width: 20px;
+				right: -27px;
+				top: 13px;
+			}
+
+			& + & {
+				margin-left: 30px;
+			}
+		}
+
+		&__prize {
+			width: 30px;
+			height: 28px;
+			background-image: url(../img/trophy.png);
+			margin-left: 30px;
+		}
+	}
+
+	// .progress__checks {
+	// 	width: 200px;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	//
+	// 	.progress__check {
+	// 		width: 32px;
+	// 		height: 32px;
+	// 		border: 2px solid #d1d3d4;
+	// 		border-radius: 100%;
+	// 		display: flex;
+	// 		justify-content: center;
+	// 		align-items: center;
+	// 		font-size: 15px;
+	// 		font-weight: bold;
+	// 		background: white;
+	// 		z-index: 1;
+	//
+	// 		&--checked {
+	// 			border-color: @yellow4game;
+	// 		}
+	// 	}
+	// }
+	//
+	// .progress__path {
+	// 	position: absolute;
+	// 	position: absolute;
+	// 	width: 300px;
+	// 	height: 30px;
+	// 	top: -15px;
+	// 	left: 28px;
+	// }
+}

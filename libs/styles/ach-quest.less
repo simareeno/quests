@@ -1,0 +1,150 @@
+@import 'vars';
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	// background-image: url(../img/play.jpg);
+	// background-color: black;
+	// background-position: top center;
+	// font-family: 'PT Sans', sans-serif;
+}
+
+a {
+	// color: #245fd9;
+}
+
+.quests {
+	margin: 100px auto ;
+
+	&__quest {
+		margin-right: 50px;
+	}
+
+	&__title {
+		    width: 100%;
+	}
+}
+
+.achievement-prize_item_desc {
+	margin-left:0;
+}
+
+.achievement-condition {
+	width: 190px;
+}
+
+.container {
+	width: 1040px!important;
+}
+
+.subbar__link {
+	a {
+		display: flex;
+
+		img {
+			margin-right: 10px;
+			margin-top: -3px;
+		}
+	}
+}
+
+.quest {
+	position: relative;
+
+	&__progress {
+		background-image: url(../img/pb.svg);
+		height: 19px;
+		position: absolute;
+		bottom: 2px;
+		z-index: 10;
+		width: 112px;
+		left: 50%;
+		margin-left: -56px;
+		opacity: 1;
+		background-repeat: no-repeat;
+		background-size: 220px;
+		background-position: -8px -200px;
+		border: 0;
+		border-top: 2px solid rgba(0, 0, 0, 0.6);
+		font-size: 11px;
+		color: #401C17;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&-bar{
+			background: rgba(0, 0, 0, 0.6);
+			width:50px;
+			border-radius: 5px;
+			height:4px;
+			margin-right: 8px;
+		}
+	}
+}
+.achievement {
+  &--color-white {
+
+      &.achievement--hover_available:hover .achievement-badge .achievement-icon,
+      .achievement--hovered .achievement-badge .achievement-icon {
+        background-color: #999;
+        box-shadow: 0 0 0 12px #fff;
+      }
+
+			.achievement-icon-placeholder {
+				box-shadow: 0 0 0 12px white !important;
+				background-color: #999 !important;
+			}
+
+      &.achievement--unlocked .achievement-prize_desc {
+        color:black;
+      }
+
+      &.achievement--locked .achievement-icon:after {
+        opacity: .5;
+      }
+
+      .achievement-icon {
+        background-color:#999;
+      }
+
+			.achievement-hover_block {
+				background-color: white;
+				box-shadow: 0 10px 40px 0 rgba(0,0,0,.4) !important;
+			}
+
+			.achievement-ring {
+				stroke: #999 !important;
+
+				&--filled {
+					stroke: #fac704 !important;
+				}
+			}
+
+			.achievement-condition_progress_bar {
+				background-color: #999;
+			}
+
+			.achievement-condition_progress_bar_completed {
+				background-color: #000;
+			}
+
+			.achievement-condition_progress_achieved,
+			.achievement-conditions_title,
+			.achievement-prize_title {
+				color: #000;
+			}
+
+			.achievement-condition--achieved {
+				.achievement-condition_check path {
+					fill: #000;
+				}
+
+				.achievement-condition_desc {
+					color: #000;
+				}
+		}
+  }
+}

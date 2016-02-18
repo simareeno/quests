@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ежедневные задания в Point Blank</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/quests.css">
+	<link rel="stylesheet" href="css/prizes.css">
+	<link rel="stylesheet" href="css/progress.css">
+	<link rel="stylesheet" href="css/achievement/animations.css">
+	<link rel="stylesheet" href="css/achievement/bgs.css">
+	<link rel="stylesheet" href="css/achievement/style.css">
+	<link rel="stylesheet" href="css/ach-quest.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
+	<script src="scripts/script.js" charset="utf-8"></script>
+</head>
+<body>
+	<div class="bar container">
+		<img src="img/bar.png" alt="" />
+	</div>
+	<div class="header container">
+		<div class="header__title h1header">
+			Задания в Point Blank
+		</div>
+		<div class="header__subbar subbar">
+			<div class="subbar__link"><a href="play_ach.html"><img src="img/pb-icon.png" alt="">Point Blank</a></div>
+			<div class="subbar__link"><a href="">в других играх</a></div>
+		</div>
+	</div>
+	<div class="quests container">
+		<div class="quests__quest quest editable">
+			<div class="quest__progress">
+				<div class="quest__progress-bar" style="0%"></div>
+				<div class="quest__progress-title">0 из 3</div>
+			</div>
+			<div class="quest__outer"></div>
+			<div class="quest__inner">
+				<div class="quest__inner-back">
+					<div class="quest__title">Убей 3 врагов ниже тебя по&nbsp;званию</div>
+					<div class="quest__cancel"></div>
+				</div>
+				<div class="quest__inner-front"></div>
+			</div>
+		</div>
+	</div>
+	<div class="quests__progress progress progress--dark progress--big">
+		<div class="progress__item"></div>
+		<div class="progress__item"></div>
+		<div class="progress__item"></div>
+		<div class="progress__item"></div>
+		<div class="progress__prize"></div>
+	</div>
+	<button class="toggle">toggle</button>
+	<div class="prizes container" id="prize">
+		<div class="prizes__title h2header">
+			Выполни 4 задания и получи одну из наград
+		</div>
+		<div class="prizes__grid">
+			<div class="prize prize--superprize prize--two-column">
+				<div class="prize__title">Баллистический нож Spy</div>
+				<div class="prize__icon"><img src="img/nozh.png" alt=""></div>
+				<div class="prize__days">на 30 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">L115A1 Redline</div>
+				<div class="prize__icon"><img src="img/pushka1.png" alt=""></div>
+				<div class="prize__days">на 30 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Kriss S.V Redline</div>
+				<div class="prize__icon"><img src="img/pushka2.png" alt=""></div>
+				<div class="prize__days">на 30 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">AUG A3 Redline</div>
+				<div class="prize__icon"><img src="img/pushka3.png" alt=""></div>
+				<div class="prize__days">на 30 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Баллистический нож Spy</div>
+				<div class="prize__icon"><img src="img/nozh.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">AUG A3 Redline</div>
+				<div class="prize__icon"><img src="img/pushka4.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Kriss S.V Redline</div>
+				<div class="prize__icon"><img src="img/pushka5.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">L115A1 Redline</div>
+				<div class="prize__icon"><img src="img/pushka6.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Баллистический нож Spy</div>
+				<div class="prize__icon"><img src="img/nozh.png" alt=""></div>
+				<div class="prize__days">на 1 день</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Парные K-413</div>
+				<div class="prize__icon"><img src="img/grenades.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Кумулятивные патроны</div>
+				<div class="prize__icon"><img src="img/bullets.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+			<div class="prize">
+				<div class="prize__title">Тяжёлый бронежилет</div>
+				<div class="prize__icon"><img src="img/antibullet.png" alt=""></div>
+				<div class="prize__days">на 7 дней</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<img src="img/footer.png" alt="">
+	</div>
+
+</body>
+</html>
