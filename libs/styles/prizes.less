@@ -1,12 +1,12 @@
 @import 'vars';
 
 .prizes {
-	margin: -80px auto 100px;
+	margin: 100px auto 100px;
 
 	&__title {
-		margin: -150px 0 20px;
+		margin: 20px 0 20px;
 		font-size: 28px;
-		// text-shadow: 0px 0px 30px tint(@customColor, 100%), 0px 0px 10px tint(@customColor, 35%);
+		// text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(255, 255, 255, 0.75);
 	}
 
 	&__subtitle {
@@ -15,7 +15,7 @@
 	}
 
 	&__big-picture {
-		margin-bottom: -50px;
+
 	}
 
 	&__grid {
@@ -199,6 +199,10 @@
 				background-color: white;
 			}
 		}
+
+		&__days {
+			color: black;
+		}
 	}
 
 	&--two-column {
@@ -210,4 +214,13 @@
 			}
 		}
 	}
+}
+
+#particles {
+	position: absolute;
+	left: -969px;
+	top: -442px;
+	z-index: -1;
+	width: 1980px;
+	height: 923px;
 }

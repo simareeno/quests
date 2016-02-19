@@ -21,6 +21,10 @@
 		box-shadow: 0 0 0px 2px #333;
 	}
 
+	&__item.prize--achieved {
+		box-shadow: 0 0 0px 2px #fc0!important;
+	}
+
 	&--state1 {
 		transform: translate(0px,0);
 	}
@@ -101,6 +105,10 @@
 		font-weight: bold;
 		margin: 0 auto;
 		opacity: .5;
+
+		&--done {
+			opacity: 1;
+		}
 	}
 
 	&__cancel {
@@ -170,15 +178,20 @@
 		font-size: 13px;
 		font-weight: bold;
 		letter-spacing: 1px;
-		border: 2px solid rgba(255,255,255, .5);
-		border-radius: 100%;
-		width: 30px;
-		height: 30px;
+		// border: 2px solid rgba(255,255,255, .5);
+		// border-radius: 100%;
+		// width: 30px;
+		// height: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		line-height: 4px;
+		line-height: 16px;
 		margin: 0 auto;
+		opacity: .5;
+
+		&--done {
+			opacity: 1;
+		}
 	}
 
 	&__flippable {
@@ -219,7 +232,11 @@
 	}
 
 	&--active {
-		// box-shadow: 0 5px 150px 0 rgba(189, 77, 61, 0.75);
+		box-shadow: 0 5px 150px 0 rgba(189, 77, 61, 0.75);
+	}
+
+	&--active&--white {
+		box-shadow: none;
 	}
 
 	&--done {
@@ -234,6 +251,13 @@
 			right: 0;
 			opacity: .5;
 			border-radius: 10px;
+		}
+	}
+
+	&--white&--done {
+
+		&:after {
+			display:none;
 		}
 	}
 

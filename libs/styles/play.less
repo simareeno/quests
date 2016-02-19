@@ -506,3 +506,50 @@ a {
 		}
 	}
 }
+
+.quests-nav {
+  position: absolute;
+  top: 30px;
+  right: 90px;
+
+  &-right {
+    left: 29px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  &-left {
+    border-radius: 4px 0 0 4px;
+
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.arrow--disabled {
+
+  svg {
+    fill: #cfd0d3!important;
+  }
+}
+.arrow {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cfd0d3;
+
+  &:hover {
+
+    svg {
+      fill:red;
+    }
+  }
+
+  svg {
+    width: 8px;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    transition: fill .2s;
+  }
+}

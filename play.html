@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Quest widget on play</title>
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/prizes.css">
 	<link rel="stylesheet" href="css/quests.css">
 	<link rel="stylesheet" href="css/play.css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
-	<script src="scripts/script.js" charset="utf-8"></script>
-	<script src="scripts/prizes-stack-box.js" charset="utf-8"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script> -->
+
 </head>
 <body>
 
@@ -20,8 +20,17 @@
 				<div class="quests__title">
 					<a href="index.html">Задания</a>
 				</div>
-				<div class="quests container quests--faq quests--state1">
+				<div class="quests-nav">
+					<div class="arrow quests-nav-left">
+						<svg x="0px" y="0px" viewBox="0 0 6 7"> <path d="M6,3.5L0,7V0L6,3.5z"/> </svg>
+					</div>
+					<div class="arrow quests-nav-right">
+						<svg x="0px" y="0px" viewBox="0 0 6 7"> <path d="M6,3.5L0,7V0L6,3.5z"/> </svg>
+					</div>
+				</div>
+				<div class="quests container quests--faq quests--state1 ">
 					<div class="faq__compact">?</div>
+
 					<div class="quests__item faq faq--state1 faq--active">
 						<div class="faq__icon">
 							<div class="faq__cards">
@@ -56,7 +65,7 @@
 					<div class="quests__item quest__flippable quests__item--1 quests__item--active">
 						<div class="quest__front">
 							<div class="quests__quest quest--white quest quest--active">
-								<div class="quest__status">1</div>
+								<div class="quest__status">Активное задание</div>
 								<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
 								<div class="quest__progress">0 из 8</div>
 								<div class="quest__cancel cancel quest__cancel--active">
@@ -67,7 +76,7 @@
 						</div>
 						<div class="quest__back">
 							<div class="quests__quest quest--white quest quest--active">
-								<div class="quest__status">1</div>
+								<div class="quest__status">Активное задание</div>
 								<div class="quest__title">Сыграй матч на карте Линкорн или Убежище</div>
 								<div class="quest__cancel cancel">
 									<div class="quest__tooltip quest__tooltip--only">Можно поменять только одно задание в день</div>
@@ -78,14 +87,14 @@
 					</div>
 					<div class="quests__quest quest--white quests__item quest quest--closed quests__item--2">
 						<div class="quest__status">
-							2
+							<img src="img/lock.png" alt="">
 						</div>
 						<div class="quest__title">Задание закрыто</div>
 						<div class="quest__desc">Выполни активное, чтобы открыть</div>
 					</div>
 					<div class="quests__quest quest--white quests__item quest quest--closed quests__item--3">
 						<div class="quest__status">
-							3
+							<img src="img/lock.png" alt="">
 						</div>
 						<div class="quest__title">Задание закрыто</div>
 						<div class="quest__desc">Выполни предыдущее, чтобы открыть</div>
@@ -101,22 +110,20 @@
 					</div>
 				</div>
 
-				<div class="quests__progress progress">
-					<div class="progress__item progress__item1 progress__card progress__card--in-progress progress__card--active">1</div>
-					<div class="progress__item progress__item2 progress__card">2</div>
-					<div class="progress__item progress__item3 progress__card">3</div>
-					<div class="progress__item progress__item4 progress__trophy">
-						<img src="img/trophy-grey.png" alt="">
-						<!-- <div class="progress__item-name">Коробка Sky Plus</div> -->
-					</div>
-				</div>
-
 			</div>
 			<div class="play__widget vk">
 				<img src="img/vk-widget.png" alt="">
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="scripts/carousel-arrows.js" charset="utf-8"></script>
+	<script src="scripts/prizes-stack-box.js" charset="utf-8"></script>
+	<script src="scripts/script.js" charset="utf-8"></script>
+
 
 </body>
 </html>

@@ -10,6 +10,7 @@
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
 	<script src="scripts/prizes-stack-box.js" charset="utf-8"></script>
+	<!-- <script src="scripts/carousel.js" charset="utf-8"></script> -->
 	<script src="scripts/script.js" charset="utf-8"></script>
 </head>
 <body>
@@ -22,8 +23,8 @@
 			Задания в Point Blank
 		</div>
 		<div class="header__subbar subbar">
-			<div class="subbar__link"><a href="play.html">Point Blank</a></div>
-			<div class="subbar__link"><a href="">в других играх</a></div>
+			<div class="subbar__link subbar__link--pb"><a href="play.html">Point Blank</a></div>
+			<div class="subbar__link subbar__link--list"><a href="">в других играх</a></div>
 		</div>
 	</div>
 	<div class="header__icon">
@@ -34,7 +35,7 @@
 		<div class="quests__item quest__flippable quests__item--1 quests__item--active">
 			<div class="quest__front">
 				<div class="quests__quest quest quest--active">
-					<div class="quest__status">1</div>
+					<div class="quest__status">Активное задание</div>
 					<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
 					<div class="quest__progress">0 из 8</div>
 					<div class="quest__cancel cancel quest__cancel--active">
@@ -45,7 +46,7 @@
 			</div>
 			<div class="quest__back">
 				<div class="quests__quest quest quest--active">
-					<div class="quest__status">1</div>
+					<div class="quest__status">Активное задание</div>
 					<div class="quest__title">Сыграй матч на карте Линкорн или Убежище</div>
 					<div class="quest__cancel cancel">
 						<div class="quest__tooltip quest__tooltip--only">Можно поменять только одно задание в день</div>
@@ -56,14 +57,14 @@
 		</div>
 		<div class="quests__quest quests__item quest quest--closed quests__item--2">
 			<div class="quest__status">
-				2
+				<img src="img/lock.png" alt="">
 			</div>
 			<div class="quest__title">Задание закрыто</div>
 			<div class="quest__desc">Выполни активное, чтобы открыть</div>
 		</div>
 		<div class="quests__quest quests__item quest quest--closed quests__item--3">
 			<div class="quest__status">
-				3
+				<img src="img/lock.png" alt="">
 			</div>
 			<div class="quest__title">Задание закрыто</div>
 			<div class="quest__desc">Выполни предыдущее, чтобы открыть</div>

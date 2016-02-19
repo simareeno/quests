@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>all</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/prizes.css">
+	<link rel="stylesheet" href="css/quests.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
+	<script src="scripts/script.js" charset="utf-8"></script>
+	<script src="scripts/prizes-stack-box.js" charset="utf-8"></script>
+	<script src="scripts/particles.js" charset="utf-8"></script>
+
+</head>
+<body class="white">
+
+	<div class="link">
+		<a href="all.html">black</a>
+	</div>
+
+<div class="quests row--white row">
+
+	<div class="quests__item quests__quest quest--white quest quest--done">
+		<div class="quest__status quest__status--done">
+			<img src="img/check-card.png" alt="">
+		</div>
+		<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
+		<div class="quest__progress quest__progress--done">8 из 8</div>
+	</div>
+
+	<div class="quests__item quest--white quest__flippable quests__item--1 quests__item--active">
+		<div class="quest__front">
+			<div class="quests__quest quest quest--white quest--active">
+				<div class="quest__status">активное задание</div>
+				<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
+				<div class="quest__progress">0 из 8</div>
+				<div class="quest__cancel cancel quest__cancel--active">
+					<div class="quest__tooltip">Поменять задание</div>
+					<img src="img/close.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="quest__back">
+			<div class="quests__quest quest quest--white quest--active">
+				<div class="quest__status">активное задание</div>
+				<div class="quest__title">Сыграй матч на карте Линкорн или Убежище</div>
+				<div class="quest__cancel cancel">
+					<div class="quest__tooltip quest__tooltip--only">Можно поменять только одно задание в день</div>
+					<img src="img/close.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quests__quest quest--white quests__item quest quest--closed quests__item--2">
+		<div class="quest__status">
+			<img src="img/clock.png" alt="">
+		</div>
+		<div class="quest__title">Задание откроется&nbsp;завтра</div>
+		<div class="quest__desc">Осталось 2 часа 15 минут</div>
+	</div>
+
+	<div class="quests__quest quest--white quests__item quest quest--closed quests__item--2">
+		<div class="quest__status">
+			<img src="img/lock.png" alt="">
+		</div>
+		<div class="quest__title">Задание закрыто</div>
+		<div class="quest__desc">Выполни активное, чтобы открыть</div>
+	</div>
+
+</div>
+
+<div class="quests row row--white">
+
+	<div class="quests__prize quests__item prize prize--white">
+		<div class="prize__trophy">
+			<img src="img/prize-white-locked.png" alt="" />
+		</div>
+		<div class="prize__title"><a href="index.html">Коробка Sky Plus</a></div>
+		<div class="prize__days">внутри случайный предмет</div>
+		<div class="prize__icon"><a href="index.html"><img class="prize__icon-img" src="img/skyplus.jpg" alt=""></a></div>
+		<div class="prize__scroll prize__scroll--hide"></div>
+	</div>
+
+	<div class="quests__prize quests__item prize prize--white prize--achieved">
+		<div class="prize__trophy">
+			<img src="img/prize-white-unlocked.png" alt="" />
+			 <canvas id="particles"></canvas>
+		</div>
+		<div class="prize__title"><a href="index.html">Коробка Sky Plus</a></div>
+		<div class="prize__days">внутри случайный предмет</div>
+		<div class="prize__icon"><a href="index.html"><img class="prize__icon-img" src="img/skyplus.jpg" alt=""></a></div>
+		<div class="prize__scroll prize__scroll--hide"></div>
+	</div>
+
+</div>
+
+</body >
+</html>
