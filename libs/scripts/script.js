@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('.quest__cancel--active').on('click', function () {
-		$('.quest__flippable').toggleClass('quest--flip');
+		setTimeout( "$('.quest__first').removeClass('quest__fake--active');" , 0);
+		$('.quest__second').addClass('quest__fake--active');
 	})
 
 	$('.play__tooltip-close').on('click', function () {

@@ -82,8 +82,6 @@ $('.quests__item--1').on('click', function () {
 	if (currentState > 1) {
 		clearStates();
 		goState();
-	} else {
-		return false;
 	}
 })
 
@@ -112,7 +110,5 @@ $('.quests__item--4').on('click', function () {
 	if (currentState < 4) {
 		clearStates();
 		goState('up');
-	} else {
-		return false;
 	}
 })
