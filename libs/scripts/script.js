@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('.quest__cancel--active').on('click', function () {
-		setTimeout( "$('.quest__first').removeClass('quest__fake--active');" , 0);
-		$('.quest__second').addClass('quest__fake--active');
+		$('.quest__first').removeClass('quest__fake--active');
+		setTimeout( "$('.quest__second').addClass('quest__fake--active')" , 400);
 	})
 
 	$('.play__tooltip-close').on('click', function () {
