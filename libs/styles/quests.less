@@ -207,7 +207,7 @@
 		img {
 			opacity: .2;
 			transition: opacity .1s, transform .2s;
-			transform: rotate(0deg);
+			// transform: rotate(0deg);
 
 		}
 
@@ -238,7 +238,7 @@
 
 			&:hover img {
 				opacity: 1;
-				transform: rotate(-25deg);
+				// transform: rotate(-25deg);
 			}
 		}
 	}
@@ -379,5 +379,24 @@
 		display: block;
 		opacity: 1;
 		transform: translate(0,0);
+	}
+}
+
+@keyframes reject {
+	40% {
+			opacity: 1;
+			animation-timing-function: ease-out;
+			transform: translate3d(0, -10%, 30px);
+		}
+	100% {
+		opacity: 0;
+		transform: translate3d(0, 100%, -300px) rotate3d(1, 0, 0, -50deg);
+	}
+}
+
+@keyframes reject2 {
+	to {
+		opacity: 0;
+		transform: translate3d(0, 400px, 0) rotate3d(0, 0, 1, 40deg);
 	}
 }
