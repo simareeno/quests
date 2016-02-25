@@ -16,6 +16,10 @@
 		& + & {
 			margin-left: 20px;
 		}
+
+		// &--1 {
+		// 	width: 205px;
+		// }
 	}
 
 	&__item.prize {
@@ -37,15 +41,15 @@
 	}
 
 	&--state2 {
-		transform: translate(-215px,0);
+		transform: translate(-195px,0);
 	}
 
 	&--state3 {
-		transform: translate(-415px,0);
+		transform: translate(-395px,0);
 	}
 
 	&--state4 {
-		transform: translate(-615px,0);
+		transform: translate(-595px,0);
 	}
 
 	&--faq& {
@@ -352,21 +356,28 @@
 	}
 }
 
+
+
+
+
+
 @keyframes reject {
 	40% {
-			opacity: 1;
-			animation-timing-function: ease-out;
-			transform: translate3d(0, -10%, 30px);
-		}
+		opacity: 1;
+		animation-timing-function: ease-out;
+		transform: translate3d(0,-10%,30px);
+	}
 	100% {
 		opacity: 0;
-		transform: translate3d(0, 100%, -300px) rotate3d(1, 0, 0, -50deg);
+		transform: translate3d(0,100%,-300px) rotate3d(1,0,0,-50deg);
 	}
 }
+
 
 @keyframes reject2 {
 	to {
 		opacity: 0;
-		transform: translate3d(0, 400px, 0) rotate3d(0, 0, 1, 40deg);
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
 	}
 }
