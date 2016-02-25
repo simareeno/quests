@@ -16,6 +16,10 @@
 		& + & {
 			margin-left: 20px;
 		}
+
+		&--1 {
+			width: 205px;
+		}
 	}
 
 	&__item.prize {
@@ -37,15 +41,15 @@
 	}
 
 	&--state2 {
-		transform: translate(-215px,0);
+		transform: translate(-195px,0);
 	}
 
 	&--state3 {
-		transform: translate(-415px,0);
+		transform: translate(-395px,0);
 	}
 
 	&--state4 {
-		transform: translate(-615px,0);
+		transform: translate(-595px,0);
 	}
 
 	&--faq& {
@@ -119,18 +123,17 @@
 	}
 
 	&__first {
-		transform: translate(0px, 15px) rotate(0deg);
 		z-index: 5;
 	}
 
 	&__second {
-		transform: translate(0px,-15px) rotate(0deg);
+		transform: scale(.9);
+		transition: transform .3s ease-in;
 		z-index: 4;
 	}
 
 	&__fake {
-		opacity: 0;
-		transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+		// transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 		position: absolute;
 		width: 190px;
 		// box-shadow: -2px 0 0 0 rgba(0, 0, 0, .2);
@@ -138,40 +141,13 @@
 
 		&--active {
 			opacity: 1;
-			transform: translate(0px,0px) rotate(0deg);
+			transform: scale(1);
 		}
 
-		&--rotate1 {
-			transform: rotate(-2deg) translate(-6px, 0px) scale(1);
-			z-index: 3;
-
-			&:after {
-				content: '';
-				background-color: rgba(255, 255, 255, .2);
-				top:0;
-				bottom:0;
-				left:0;
-				right:0;
-				position: absolute;
-				border-radius: 10px;
-			}
-		}
-
-		&--rotate2 {
-			transform: rotate(-4deg) translate(-12px, 0px) scale(1);
-			z-index: 2;
-			box-shadow: -2px 0px 2px 0 rgba(0, 0, 0, 0);
-
-			&:after {
-				content: '';
-				background-color: rgba(255, 255, 255, .4);
-				top:0;
-				bottom:0;
-				left:0;
-				right:0;
-				position: absolute;
-				border-radius: 10px;
-			}
+		&--rejected {
+			animation: reject2 0.6s forwards;
+			animation-timing-function: ease-in;
+			transform-origin: 50% 100%;
 		}
 	}
 
@@ -207,7 +183,6 @@
 		img {
 			opacity: .2;
 			transition: opacity .1s, transform .2s;
-			transform: rotate(0deg);
 
 		}
 
@@ -238,7 +213,6 @@
 
 			&:hover img {
 				opacity: 1;
-				transform: rotate(-25deg);
 			}
 		}
 	}
@@ -379,5 +353,31 @@
 		display: block;
 		opacity: 1;
 		transform: translate(0,0);
+	}
+}
+
+
+
+
+
+
+@keyframes reject {
+	40% {
+		opacity: 1;
+		animation-timing-function: ease-out;
+		transform: translate3d(0,-10%,30px);
+	}
+	100% {
+		opacity: 0;
+		transform: translate3d(0,100%,-300px) rotate3d(1,0,0,-50deg);
+	}
+}
+
+
+@keyframes reject2 {
+	to {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
 	}
 }

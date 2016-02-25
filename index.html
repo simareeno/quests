@@ -22,24 +22,24 @@
 			Задания в Point Blank
 		</div>
 		<div class="header__subbar subbar">
-			<div class="subbar__link"><a href="play.html">Point Blank</a></div>
-			<div class="subbar__link"><a href="">в других играх</a></div>
+			<div class="subbar__link subbar__link--pb"><a href="play.html">Point Blank</a></div>
+			<div class="subbar__link subbar__link--list"><a href="">в других играх</a></div>
 		</div>
 	</div>
-	<div class="header__icon">
+	<!-- <div class="header__icon">
 		<img src="img/make-3-tasks.png" alt="">
-	</div>
-	<div class="h2header">Получай награду за каждые три задания</div>
-	<div class="quests container">
-		<div class="quests__item quests__item--1 quests__item--active">
+	</div> -->
+	<div class="h2header" id="quests-header">За каждые 3 задания — награда</div>
+	<div class="quests container" id="quests">
+		<div class="quests__item quests__item--1 quests__item--active" style="width:190px;">
 			<div class="quest__first quest__fake quest__fake--active">
 				<div class="quests__quest quest--white quest quest--active">
 					<div class="quest__status">Активное задание</div>
 					<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
 					<div class="quest__progress">0 из 8</div>
 					<div class="quest__cancel cancel quest__cancel--active">
-						<div class="quest__tooltip">Поменять задание</div>
-						<img src="img/restart.png" alt="">
+						<div class="quest__tooltip">Заменить задание</div>
+						<img src="img/close.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -48,22 +48,22 @@
 					<div class="quest__status">Активное задание</div>
 					<div class="quest__title">Сыграй матч на карте Линкорн или Убежище</div>
 					<div class="quest__cancel cancel">
-						<div class="quest__tooltip quest__tooltip--only">Можно поменять только одно задание в день</div>
-						<img src="img/restart.png" alt="">
+						<div class="quest__tooltip quest__tooltip--only">Можно заменить только одно задание в день</div>
+						<img src="img/close.png" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="quests__quest quests__item quest quest--closed quests__item--2">
 			<div class="quest__status">
-				2
+				<img src="img/lock.png" alt="">
 			</div>
 			<div class="quest__title">Задание закрыто</div>
 			<div class="quest__desc">Выполни активное, чтобы открыть</div>
 		</div>
 		<div class="quests__quest quests__item quest quest--closed quests__item--3">
 			<div class="quest__status">
-				3
+				<img src="img/lock.png" alt="">
 			</div>
 			<div class="quest__title">Задание закрыто</div>
 			<div class="quest__desc">Выполни предыдущее, чтобы открыть</div>
@@ -79,13 +79,22 @@
 		</div>
 	</div>
 	<div class="prizes container" id="prizes">
-		<div class="prizes__big-picture">
-			<img src="img/prize.png" alt="">
+		<div class="prizes__desc-block">
+			<div class="prizes__desc-block-left">
+				<div class="prizes__big-picture">
+					<img src="img/sunduk-isolated.png" alt="">
+				</div>
+			</div>
+			<div class="prizes__desc-block-right">
+				<div class="prizes__title h2header">
+					Коробка Sky Plus
+				</div>
+				<div class="prizes__description">
+					Стань самым неуловимым и метким игроком с нашей уникальной коллекцией SPY. Недостающие предметы ты сможешь выбить из новой шпионской коробки SPY Plus.
+				</div>
+				<div class="prizes__subtitle h3header">Ты получишь одну случайно выбранную награду из этого списка.</div>
+			</div>
 		</div>
-		<div class="prizes__title h2header">
-			Коробка Sky Plus
-		</div>
-		<div class="prizes__subtitle h3header">Ты получишь одну случайно выбранную награду из этого списка </div>
 		<div class="prizes__grid">
 			<div class="prize prize--superprize prize--two-column prize--two-row">
 				<div class="prize__icon"><img src="img/nozh.png" alt=""></div>
@@ -215,6 +224,10 @@
 			</div>
 		</div>
 	</div> -->
+
+	<div class="faq container">
+		<img src="img/faq.png" alt="">
+	</div>
 	<div class="footer">
 		<img src="img/footer.png" alt="">
 	</div>
