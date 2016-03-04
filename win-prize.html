@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quest widget on play</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/prizes.css">
+	<link rel="stylesheet" href="css/quests.css">
+	<link rel="stylesheet" href="css/play.css">
+	<link rel="stylesheet" href="css/win.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" charset="utf-8"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+	<script src="http://www.gannon.tv/edge_demos/greenprop_update/GreenProp.min.js"></script>
+	<script src="scripts/script.js" charset="utf-8"></script>
+	<script src="scripts/prizes-stack-box.js" charset="utf-8"></script>
+	<!-- <script src="scripts/particles.js" charset="utf-8"></script> -->
+</head>
+<body>
+
+	<div class="play">
+		<div class="play__column column">
+			<div class="play__widget play__widget--quests">
+				<div class="quests__title">
+					<a href="index.html">Задание дня</a>
+				</div>
+				<div class="quests container quests--state4">
+					<div class="faq__compact faq__compact--active">?</div>
+					<div class="quests__item faq faq--state1">
+						<div class="faq__icon">
+							<div class="faq__cards">
+								<div class="faq__card faq__card1"></div>
+								<div class="faq__card faq__card2"></div>
+								<div class="faq__card faq__card3"></div>
+							</div>
+							<div class="faq__equal">
+								<div class="faq__equal-line faq__equal-line1"></div>
+								<div class="faq__equal-line faq__equal-line2"></div>
+							</div>
+							<div class="faq__sun">
+								<img src="img/faq-sun.png" alt="">
+							</div>
+							<div class="faq__cup">
+								<img src="img/faq-cup.png" alt="">
+							</div>
+							<div class="faq__x">×</div>
+						</div>
+						<div class="faq__descs">
+							<div class="faq__desc1 faq__desc faq__desc1">Получай награду за&nbsp;каждые три задания</div>
+							<div class="faq__desc2 faq__desc faq__desc2">Выполняй по&nbsp;одному заданию каждый день</div>
+							<div class="faq__desc3 faq__desc faq__desc3">Меняй задания, которые не&nbsp;нравятся</div>
+						</div>
+						<div class="faq__close"><a>Понятно, закрыть</a></div>
+					</div>
+					<div class="quests__item quests__item--1 quests__item--active">
+						<div class="quest__first quest__fake">
+							<div class="quests__quest quest--white quest quest--active">
+								<div class="quest__status">
+									<img src="img/check-card.png" alt="">
+								</div>
+								<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
+								<div class="quest__progress">8 из 8</div>
+							</div>
+						</div>
+						<div class="quest__second quest__fake">
+							<div class="quests__quest quest--white quest quest--closed">
+								<div class="quest__status">
+									<img src="img/clock.png" alt="">
+								</div>
+								<div class="quest__title">Задание закрыто</div>
+								<div class="quest__desc">Откроется через 2 часа</div>
+							</div>
+						</div>
+					</div>
+					<div class="quests__item quests__item--2 quests__item--active">
+						<div class="quest__first quest__fake">
+							<div class="quests__quest quest--white quest quest--active">
+								<div class="quest__status">
+									<img src="img/check-card.png" alt="">
+								</div>
+								<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
+								<div class="quest__progress">8 из 8</div>
+							</div>
+						</div>
+						<div class="quest__second quest__fake">
+							<div class="quests__quest quest--white quest quest--closed">
+								<div class="quest__status">
+									<img src="img/lock.png" alt="">
+								</div>
+								<div class="quest__title">Задание закрыто</div>
+								<div class="quest__desc">Выполни предыдущее задание, чтобы открыть</div>
+							</div>
+						</div>
+					</div>
+					<div class="quests__item quests__item--3 ">
+						<div class="quest__first quest__fake">
+							<div class="quests__quest quest--white quest quest--active">
+								<div class="quest__status">
+									<img src="img/check-card.png" alt="">
+								</div>
+								<div class="quest__title">Убей в&nbsp;маске 8&nbsp;противников</div>
+								<div class="quest__progress">8 из 8</div>
+							</div>
+						</div>
+						<div class="quest__second quest__fake">
+							<div class="quests__quest quest--white quest quest--closed">
+								<div class="quest__status">
+									<img src="img/lock.png" alt="">
+								</div>
+								<div class="quest__title">Задание закрыто</div>
+								<div class="quest__desc">Выполни предыдущее задание, чтобы открыть</div>
+							</div>
+						</div>
+					</div>
+					<div class="quests__prize prize--white quests__item prize quests__item--active">
+						<div class="quest__item-check">
+							<div class="quest__item-check-check"></div>
+							<div class="quest__item-check-text">Награда получена</div>
+						</div>
+						<div class="prize__item-button prize__item-button-open prize__item-button--active">Открыть</div>
+						<div class="prize__item-button prize__item-button-get">Забрать</div>
+						<div class="prize__trophy">
+							<svg x="0px" y="0px" viewBox="0 0 23.5 22">
+							<g id="s">
+								<line id="middle-line" class="st1" x1="11.9" y1="16" x2="11.9" y2="21"/>
+								<line id="bottom-line_1_" class="st1" x1="7.4" y1="21.5" x2="16.4" y2="21.5"/>
+								<g id="cup_1_">
+									<path id="bottom_1_" class="st1" d="M12,15.6C12,15.6,12,15.6,12,15.6c0,0-0.1,0-0.1,0C11.9,15.6,11.9,15.6,12,15.6z"/>
+									<path id="top_1_" class="st1" d="M17.9,4.5c0.1-1.7,0-3,0-3H5.6c0,0,0,1.2,0.1,2.9"/>
+									<path id="right-handle_1_" class="st1" d="M22.1,4.9c-0.2-0.2-2.4-0.3-4.2-0.4c-0.2,4.1-1.2,11.1-5.9,11.1c0,0,0,0,0,0
+										C17.2,15.6,24.4,7.2,22.1,4.9z"/>
+									<path id="left-handle_1_" class="st1" d="M5.7,4.4c-1.8,0.1-4,0.2-4.3,0.5C-1,7.3,6.8,15.6,11.9,15.6C7.2,15.6,6,8.5,5.7,4.4z"/>
+								</g>
+							</g>
+							</svg>
+						</div>
+						<canvas id="particles"></canvas>
+						<div class="prize__box prize__state prize__state--active">
+							<div class="prize__title"><a href="index.html#quests-header">Коробка Sky Plus</a></div>
+							<div class="prize__days">внутри случайный предмет</div>
+							<div class="prize__icon"><a href="index.html#quests-header"><img class="prize__icon-img" src="img/skyplus.jpg" alt=""></a></div>
+							<div class="prize__scroll prize__scroll--hide"></div>
+						</div>
+						<div class="prize__item prize__state">
+							<div class="prize__icon-flow"><img src="img/prizes-flow.png" alt=""></div>
+							<!-- <div class="prize__button"><img src="img/button-stop.png" alt=""></div> -->
+							<div class="prize__content">
+								<div class="prize__name">L115A1 Redline</div>
+								<!-- <div class="prize__days">на 30 дней</div> -->
+								<div class="prize__tag">на 10 дней</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="quests__progress progress">
+					<div class="progress__item progress__item1 progress__card progress__card--achieved">1</div>
+					<div class="progress__item progress__item2 progress__card progress__card--achieved">2</div>
+					<div class="progress__item progress__item3 progress__card progress__card--achieved">3</div>
+					<div class="progress__item progress__item4 progress__trophy progress__trophy--achieved progress__card--active ">
+						<svg x="0px" y="0px" viewBox="0 0 23.5 22">
+						<g id="s">
+							<line id="middle-line" class="st1" x1="11.9" y1="16" x2="11.9" y2="21"/>
+							<line id="bottom-line_1_" class="st1" x1="7.4" y1="21.5" x2="16.4" y2="21.5"/>
+							<g id="cup_1_">
+								<path id="bottom_1_" class="st1" d="M12,15.6C12,15.6,12,15.6,12,15.6c0,0-0.1,0-0.1,0C11.9,15.6,11.9,15.6,12,15.6z"/>
+								<path id="top_1_" class="st1" d="M17.9,4.5c0.1-1.7,0-3,0-3H5.6c0,0,0,1.2,0.1,2.9"/>
+								<path id="right-handle_1_" class="st1" d="M22.1,4.9c-0.2-0.2-2.4-0.3-4.2-0.4c-0.2,4.1-1.2,11.1-5.9,11.1c0,0,0,0,0,0
+									C17.2,15.6,24.4,7.2,22.1,4.9z"/>
+								<path id="left-handle_1_" class="st1" d="M5.7,4.4c-1.8,0.1-4,0.2-4.3,0.5C-1,7.3,6.8,15.6,11.9,15.6C7.2,15.6,6,8.5,5.7,4.4z"/>
+							</g>
+						</g>
+						</svg>
+						<!-- <img src="img/trophy-yellow.png" alt=""> -->
+						<!-- <div class="progress__item-name">Коробка Sky Plus</div> -->
+					</div>
+				</div>
+
+				<!-- <div class="description">
+					<div class="description__title">Задания выполнены</div>
+					<div class="description__subtitle">Задания выполнены, теперь пора узнать, что ты&nbsp;выиграл.</div>
+					<div class="description__button"><img src="img/button-stop.png" alt=""></div>
+				</div> -->
+
+			</div>
+			<div class="play__widget vk">
+				<img src="img/vk-widget.png" alt="">
+			</div>
+		</div>
+	</div>
+	<script src="scripts/win-prize.js" charset="utf-8"></script>
+
+</body>
+</html>

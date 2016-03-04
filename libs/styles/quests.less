@@ -32,8 +32,8 @@
 		background: white;
 	}
 
-	&__item.prize--achieved {
-		box-shadow: 0 0 0px 2px #fc0!important;
+	&__item.prize--achieved,  &__item.prize.prize--white.prize--achieved{
+		box-shadow: 0 0 0px 2px #fc0;
 	}
 
 	&--state1 {
@@ -127,7 +127,7 @@
 	}
 
 	&__second {
-		transform: scale(.9);
+		transform: scale(.95);
 		transition: transform .3s ease-in;
 		z-index: 4;
 	}
@@ -160,6 +160,8 @@
 		height: 20px;
 		line-height: 14px;
 		text-align: left;
+		z-index: 13;
+		border-radius: 10px;
 
 		&-arrow {
 			opacity: .2;
@@ -377,7 +379,6 @@
 @keyframes reject2 {
 	to {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
-		transform: translate3d(0, 400px,0) rotate3d(0,0,1,40deg);
+		transform: translate3d(0, 300px,0) rotate3d(0,0,1,30deg);
 	}
 }

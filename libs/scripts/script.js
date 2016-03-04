@@ -17,10 +17,19 @@ function clearStates() {
 
 $(document).ready(function() {
 	$('.quest__cancel--active').on('click', function () {
-			$('.quest__first').addClass('quest__fake--rejected');
-			setTimeout( "$('.quest__second').addClass('quest__fake--active')" , 300);
+			var questItem = $(this).closest('.quests__item');
+			var firtsItem = $(questItem).find('.quest__first');
+			var secondItem = $(questItem).find('.quest__second');
+
+			function activateSecond() {
+				$(secondItem).addClass('quest__fake--active')
+			}
+
+			$(firtsItem).addClass('quest__fake--rejected');
+			setTimeout( activateSecond , 300);
+
 		})
-		
+
 	$('.play__tooltip-close').on('click', function () {
 		$('.tooltip').hide();
 	})
